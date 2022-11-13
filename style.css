@@ -1,0 +1,50 @@
+body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(45deg, #22a6b3, #30336b)
+}
+
+.what-btn {
+    background: linear-gradient(30deg, #3498db, #5363d8);
+    color: #fff;
+    font-family: "Montserrat";
+    border: 0;
+    padding: 16px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    border-radius: 40px;
+    transition: .3s;
+    overflow: hidden;
+}
+#time {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    transform: translateY(100%);
+}
+
+.what-btn:hover {
+    border-radius: 0;
+}
+.text, .icons {
+    display: inline-block;
+    transition: .3s;
+}
+.what-btn:hover .text,
+.what-btn:hover .icons,
+.what-btn:hover #time {
+    transform: translateY(-40px);
+}
+#time:hover {
+    opacity: .7;
+}
